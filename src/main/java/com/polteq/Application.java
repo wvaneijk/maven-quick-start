@@ -47,6 +47,5 @@ public class Application {
 	Mongo mongo = new Mongo();
 	mongo.setupDBConnection();
 	mongo.listDBNames();
-	mongo.addItemToOrder("William", "Fiets");
     }
 }
