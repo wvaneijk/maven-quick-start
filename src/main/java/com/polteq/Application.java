@@ -3,10 +3,6 @@ package com.polteq;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.StringUtils;
-
-import com.polteq.MongoDB.mongoCollections;
-
 public class Application {
 	
 	//Maak een onderdeel van een webshop waarmee orders aangemaakt kunnen worden. 
@@ -19,6 +15,18 @@ public class Application {
 	//•	het gewicht, namelijk: prijs * (gewicht / GRAMS_PER_UNIT) 
 	//•	het volume, namelijk: prijs * (volume / LITERS_PER_UNIT) 
 	//De standaardwaarde voor GRAMS_PER_UNIT is 100 gram en de standaardwaarde voor LITERS_PER_UNIT is 0,75 liter.
+
+
+    public static void main (String[] args) {
+	Customer customer = new Customer();
+	Product product = new Product();
+	customer.createCustomer("William");
+	product.listAllProducts();
+	customer.addProductToCart("William", "Hagelslag");	
+	customer.addProductToCart("William", "Bier");
+	customer.addProductToCart("William", "Allesreiniger");
+    }
+    
 	
 	public void greet(){
 		List<String> greetings = new ArrayList<>();
@@ -32,19 +40,11 @@ public class Application {
 	
 	}
 	
-	public void orderPicker(){
+	public void addOrder(String user, String product){
 		
 	}
 	
     public Application() {
         System.out.println ("Inside Application");
-    }
-
-    public static void main (String[] args) {
-	MongoDB mongo = new MongoDB();
-	Customer customer = new Customer();
-	
-	customer.createCustomer("Willybilly");
-	
     }
 }

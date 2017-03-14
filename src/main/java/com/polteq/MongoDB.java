@@ -2,17 +2,13 @@ package com.polteq;
 
 import java.util.List;
 
-import org.bson.Document;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoIterable;
+import com.polteq.MongoDB.mongoCollections;
 
 public class MongoDB {
 
@@ -29,13 +25,15 @@ public class MongoDB {
 		return collection;
 	}
 
-	public void connectToDB() {
+	public void setCollection(mongoCollections mongoCollections){
 		mongoclient = new MongoClient("localhost", 27017);
 		database = mongoclient.getDB("TDDDB");
+		collection = database.getCollectionFromString(mongoCollections.toString().toLowerCase());
 	}
 	
-	public void setCollection(mongoCollections mongoCollection){
-		collection = database.getCollection(mongoCollection.toString().toLowerCase());
+	public DBCursor listAll(){
+		DBCursor cursor = collection.find();
+		return cursor;
 	}
 	
 	public void addDocumentToCollection(BasicDBObject document) {
