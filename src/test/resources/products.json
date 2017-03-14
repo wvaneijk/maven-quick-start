@@ -1,0 +1,302 @@
+[
+ {
+   "productName": "Halvarine",
+   "measureUnit": "GR",
+   "measureAmount": 322,
+   "price": 3.22
+ },
+ {
+   "productName": "Gehakt",
+   "measureUnit": "GR",
+   "measureAmount": 332,
+   "price": 3.32
+ },
+ {
+   "productName": "Boterhamworst",
+   "measureUnit": "GR",
+   "measureAmount": 409,
+   "price": 4.09
+ },
+ {
+   "productName": "Koffie",
+   "measureUnit": "GR",
+   "measureAmount": 411,
+   "price": 4.11
+ },
+ {
+   "productName": "Achterham",
+   "measureUnit": "GR",
+   "measureAmount": 423,
+   "price": 4.23
+ },
+ {
+   "productName": "feta",
+   "measureUnit": "GR",
+   "measureAmount": 440,
+   "price": 4.4
+ },
+ {
+   "productName": "Hagelslag",
+   "measureUnit": "GR",
+   "measureAmount": 472,
+   "price": 4.72
+ },
+ {
+   "productName": "Frites",
+   "measureUnit": "GR",
+   "measureAmount": 482,
+   "price": 4.82
+ },
+ {
+   "productName": "Bloem",
+   "measureUnit": "GR",
+   "measureAmount": 525,
+   "price": 5.25
+ },
+ {
+   "productName": "Eieren",
+   "measureUnit": "GR",
+   "measureAmount": 525,
+   "price": 5.25
+ },
+ {
+   "productName": "Bonduelle",
+   "measureUnit": "GR",
+   "measureAmount": 564,
+   "price": 5.64
+ },
+ {
+   "productName": "Keukenpapier",
+   "measureUnit": "GR",
+   "measureAmount": 637,
+   "price": 6.37
+ },
+ {
+   "productName": "Choco",
+   "measureUnit": "GR",
+   "measureAmount": 658,
+   "price": 6.58
+ },
+ {
+   "productName": "Chocolade",
+   "measureUnit": "GR",
+   "measureAmount": 702,
+   "price": 7.02
+ },
+ {
+   "productName": "Knackebrod",
+   "measureUnit": "GR",
+   "measureAmount": 716,
+   "price": 7.16
+ },
+ {
+   "productName": "Kaas",
+   "measureUnit": "GR",
+   "measureAmount": 720,
+   "price": 7.2
+ },
+ {
+   "productName": "Kattenvoer",
+   "measureUnit": "GR",
+   "measureAmount": 748,
+   "price": 7.48
+ },
+ {
+   "productName": "Hamburgers",
+   "measureUnit": "GR",
+   "measureAmount": 782,
+   "price": 7.82
+ },
+ {
+   "productName": "Duo",
+   "measureUnit": "GR",
+   "measureAmount": 788,
+   "price": 7.88
+ },
+ {
+   "productName": "brood",
+   "measureUnit": "GR",
+   "measureAmount": 795,
+   "price": 7.95
+ },
+ {
+   "productName": "cornflakes",
+   "measureUnit": "GR",
+   "measureAmount": 797,
+   "price": 7.97
+ },
+ {
+   "productName": "Casselerib",
+   "measureUnit": "GR",
+   "measureAmount": 862,
+   "price": 8.62
+ },
+ {
+   "productName": "Erwten",
+   "measureUnit": "GR",
+   "measureAmount": 868,
+   "price": 8.68
+ },
+ {
+   "productName": "Eiersalade",
+   "measureUnit": "GR",
+   "measureAmount": 881,
+   "price": 8.81
+ },
+ {
+   "productName": "Chips",
+   "measureUnit": "GR",
+   "measureAmount": 885,
+   "price": 8.85
+ },
+ {
+   "productName": "Cruesli",
+   "measureUnit": "GR",
+   "measureAmount": 976,
+   "price": 9.76
+ },
+ {
+   "productName": "Champignons",
+   "measureUnit": "GR",
+   "measureAmount": 977,
+   "price": 9.77
+ },
+ {
+   "productName": "Komkommersalade",
+   "measureUnit": "GR",
+   "measureAmount": 984,
+   "price": 9.84
+ },
+ {
+   "productName": "Allesreiniger",
+   "measureUnit": "L",
+   "measureAmount": 0.06,
+   "price": 0.8
+ },
+ {
+   "productName": "Bier",
+   "measureUnit": "L",
+   "measureAmount": 0.09,
+   "price": 1.2
+ },
+ {
+   "productName": "Frituurvet",
+   "measureUnit": "L",
+   "measureAmount": 0.12,
+   "price": 1.6
+ },
+ {
+   "productName": "Cola",
+   "measureUnit": "L",
+   "measureAmount": 0.15,
+   "price": 2
+ },
+ {
+   "productName": "Appelmoes",
+   "measureUnit": "L",
+   "measureAmount": 0.2,
+   "price": 2.67
+ },
+ {
+   "productName": "Handzeep",
+   "measureUnit": "L",
+   "measureAmount": 0.2,
+   "price": 2.67
+ },
+ {
+   "productName": "Fruitdrank",
+   "measureUnit": "L",
+   "measureAmount": 0.26,
+   "price": 3.47
+ },
+ {
+   "productName": "HalfvolleMelk",
+   "measureUnit": "L",
+   "measureAmount": 0.3,
+   "price": 4
+ },
+ {
+   "productName": "Coco",
+   "measureUnit": "L",
+   "measureAmount": 0.31,
+   "price": 4.13
+ },
+ {
+   "productName": "Honing",
+   "measureUnit": "L",
+   "measureAmount": 0.34,
+   "price": 4.53
+ },
+ {
+   "productName": "Ketchup",
+   "measureUnit": "L",
+   "measureAmount": 0.35,
+   "price": 4.67
+ },
+ {
+   "productName": "Cola",
+   "measureUnit": "L",
+   "measureAmount": 0.47,
+   "price": 6.27
+ },
+ {
+   "productName": "Citroensap",
+   "measureUnit": "L",
+   "measureAmount": 0.55,
+   "price": 7.33
+ },
+ {
+   "productName": "Koffiemelk",
+   "measureUnit": "L",
+   "measureAmount": 0.57,
+   "price": 7.6
+ },
+ {
+   "productName": "Afwasmiddel",
+   "measureUnit": "L",
+   "measureAmount": 0.63,
+   "price": 8.4
+ },
+ {
+   "productName": "ijsthee",
+   "measureUnit": "L",
+   "measureAmount": 0.64,
+   "price": 8.53
+ },
+ {
+   "productName": "Erwtensoep",
+   "measureUnit": "L",
+   "measureAmount": 0.65,
+   "price": 8.67
+ },
+ {
+   "productName": "Diksap",
+   "measureUnit": "L",
+   "measureAmount": 0.69,
+   "price": 9.2
+ },
+ {
+   "productName": "Jam",
+   "measureUnit": "L",
+   "measureAmount": 0.71,
+   "price": 9.47
+ },
+ {
+   "productName": "Crème",
+   "measureUnit": "L",
+   "measureAmount": 0.75,
+   "price": 10
+ },
+ {
+   "productName": "Appelstroop",
+   "measureUnit": "L",
+   "measureAmount": 0.76,
+   "price": 10.13
+ },
+ {
+   "productName": "Fritessaus",
+   "measureUnit": "L",
+   "measureAmount": 0.87,
+   "price": 11.6
+ }
+]
