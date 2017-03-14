@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.polteq.MongoDB.mongoCollections;
+
 public class Application {
 	
 	//Maak een onderdeel van een webshop waarmee orders aangemaakt kunnen worden. 
@@ -17,9 +19,6 @@ public class Application {
 	//•	het gewicht, namelijk: prijs * (gewicht / GRAMS_PER_UNIT) 
 	//•	het volume, namelijk: prijs * (volume / LITERS_PER_UNIT) 
 	//De standaardwaarde voor GRAMS_PER_UNIT is 100 gram en de standaardwaarde voor LITERS_PER_UNIT is 0,75 liter.
-	
-    
-	
 	
 	public void greet(){
 		List<String> greetings = new ArrayList<>();
@@ -41,11 +40,11 @@ public class Application {
         System.out.println ("Inside Application");
     }
 
-    // method main(): ALWAYS the APPLICATION entry point
     public static void main (String[] args) {
-    	System.out.println ("Starting Application");
-	Mongo mongo = new Mongo();
-	mongo.setupDBConnection();
-	mongo.listDBNames();
+	MongoDB mongo = new MongoDB();
+	Customer customer = new Customer();
+	
+	customer.createCustomer("Willybilly");
+	
     }
 }

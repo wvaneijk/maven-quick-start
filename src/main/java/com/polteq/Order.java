@@ -18,7 +18,7 @@ import java.util.List;
 public class Order {
 
 	public List<String> items;
-	public Mongo mongoclient = new Mongo();
+	public MongoDB mongoclient = new MongoDB();
 
 	public Order(String clientName) {
 		items = new ArrayList<String>();
