@@ -25,6 +25,8 @@ public class Application {
 	customer.addProductToCart("William", "Hagelslag");	
 	customer.addProductToCart("William", "Bier");
 	customer.addProductToCart("William", "Allesreiniger");
+	customer.getCartProducts("William");
+	customer.getCartTotalPrice("William");
     }
     
 	

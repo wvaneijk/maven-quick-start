@@ -13,7 +13,7 @@ public class Customer {
 		mongo.setCollection(mongoCollections.CUSTOMERS);
 		
 		BasicDBObject document = new BasicDBObject();
-		document.append("user", username);
+		document.append("userName", username);
 		
 		if(!userExist(username))
 			mongo.addDocumentToCollection(document);
@@ -24,7 +24,7 @@ public class Customer {
 	
 	public Boolean userExist(String username){
 		mongo.setCollection(mongoCollections.CUSTOMERS);
-		DBCursor queryresults = mongo.queryDB("user", username);
+		DBCursor queryresults = mongo.queryDB("userName", username);
 		
 		if (queryresults.size() == 0) {
 			return false;
@@ -48,14 +48,48 @@ public class Customer {
 		
 	}
 	
+	public void getCartProducts(String username)
+	{
+			mongo.setCollection(mongoCollections.ORDERS);
+			DBCursor queryresults = mongo.queryDB("userName", username);
+			while (queryresults.hasNext()) {
+			    BasicDBObject obj = (BasicDBObject) queryresults.next();
+			    System.out.println(obj.getString("productName") + " €" +(obj.getString("price")));
+			}
+	}
+	
+	public double getCartTotalPrice(String username)
+	{
+		double totalprice = 0;
+		mongo.setCollection(mongoCollections.ORDERS);
+		DBCursor queryresults = mongo.queryDB("userName", username);
+		while (queryresults.hasNext()) {
+		    BasicDBObject obj = (BasicDBObject) queryresults.next();
+		    totalprice += obj.getDouble("price");
+		}
+		System.out.println("Total is €" + totalprice);
+		return totalprice;
+	}
+	
+	public double getProductPrice(String product)
+	{
+		mongo.setCollection(mongoCollections.PRODUCTS);
+		DBCursor queryresults = mongo.queryDB("productName", product);
+		BasicDBObject obj = (BasicDBObject) queryresults.one();
+		mongo.setCollection(mongoCollections.ORDERS);
+		return obj.getDouble("price");
+		
+	}
 	
 	public void addProductToCart(String username, String product)
 	{
+		mongo.setCollection(mongoCollections.ORDERS);
 		if (userExist(username) && productExist(product)) {
-			mongo.setCollection(mongoCollections.ORDERS);
 			BasicDBObject document = new BasicDBObject();
-			document.append("user", username);
-			document.append("product", product);
+			document.append("userName", username);
+			document.append("productName", product);
+			document.append("price", getProductPrice(product));
+			
 			mongo.addDocumentToCollection(document);
 			System.out.println("Order succesfully placed");
 		}

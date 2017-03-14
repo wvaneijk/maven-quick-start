@@ -13,7 +13,7 @@ public class Product{
 		DBCursor results = mongo.listAll();
 		while (results.hasNext()) {
 		    BasicDBObject obj = (BasicDBObject) results.next();
-		    System.out.println(obj.getString("productName"));
+		    System.out.println(obj.getString("productName") + " €"+obj.getString("price"));
 		}
 	}
 }
